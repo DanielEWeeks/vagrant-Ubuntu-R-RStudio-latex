@@ -7,6 +7,7 @@ This was constructed based on the 'R-BOX' model available here: (https://github.
 To install this Ubuntu Virtual Machine, do the following:
 
  - Download VirtualBox from https://www.virtualbox.org
+ - Download and install the Oracle VM VirtualBox Extension Pack from https://www.virtualbox.org/wiki/Downloads
  - Download Vagrant from https://www.vagrantup.com/downloads.html
  - Download this project
  - Open a command line and change directories into the project folder. 

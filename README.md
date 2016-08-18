@@ -11,5 +11,5 @@ To install this Ubuntu Virtual Machine, do the following:
  - Download this project
  - Open a command line and change directories into the project folder. 
  - Issue the command `vagrant plugin install vagrant-vbguest`
- - Issue the command `vagrant up` and *wait* until the script is completely done.
+ - Issue the command `vagrant up` and **wait** until the script is completely done.
  - Login using username/password = vagrant/vagrant

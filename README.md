@@ -9,7 +9,7 @@ Note that depending on how fast your Internet connection is, this installation c
 To install this Ubuntu Virtual Machine, do the following:
 
  - Download the current version of VirtualBox from https://www.virtualbox.org and install it.
- - Download and install the Oracle VM VirtualBox Extension Pack from https://www.virtualbox.org/wiki/Downloads
+ - Download the Oracle VM VirtualBox Extension Pack from https://www.virtualbox.org/wiki/Downloads and install it.  To agree to the license, you will need to scroll all the way to the bottom before the "I Agree" button will become active.
  - Download Vagrant from https://www.vagrantup.com/downloads.html and install it.  On some host machines, you may need to reboot after installing Vagrant.
  - Download this project either using git or by downloading the zip file and decompressing it on your machine.
  - Open a command line and change directories into the project folder. 

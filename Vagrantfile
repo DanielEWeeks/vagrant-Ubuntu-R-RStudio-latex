@@ -12,6 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
 # config.vm.box = "puppetlabs/ubuntu-16.04-64-puppet"
   config.vm.box = "marcoaltieri/ubuntu-desktop-16.04-64bit"
+  config.disksize.size = '10GB'
 
 
 #  config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-i386-vagrant-disk1.box"
@@ -30,7 +31,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider "virtualbox" do |vb|
      # Don't boot with headless mode
      vb.gui = true
-     vb.name='r-box'  
+     vb.name='r-box-2018'  
      # Use VBoxManage to customize the VM. For example to change memory:
      vb.memory = 2048
    end

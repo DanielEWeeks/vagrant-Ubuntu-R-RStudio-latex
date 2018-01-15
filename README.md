@@ -12,7 +12,7 @@ To install this Ubuntu Virtual Machine, do the following:
  - Download the Oracle VM VirtualBox Extension Pack from https://www.virtualbox.org/wiki/Downloads and install it.  To agree to the license, you will need to scroll all the way to the bottom before the "I Agree" button will become active.
  - Download Vagrant from https://www.vagrantup.com/downloads.html and install it.  On some host machines, you may need to reboot after installing Vagrant.
  - Download this project either using git or by downloading the zip file and decompressing it on your machine.
- - Download this Vagrant plugin via `git clone https://github.com/sprotheroe/vagrant-disksize.git`.
+ - Download the vagrant-disksize plugin from https://github.com/sprotheroe/vagrant-disksize from GitHub.
  - Open a command line and change directories into the project folder. 
  - Issue the command `vagrant plugin install vagrant-vbguest` at the host command line.
  - Issue the command `vagrant plugin install vagrant-disksize` at the host command line.
@@ -24,14 +24,14 @@ Note that the 'vagrant' user has super user privileges on the Ubuntu Virtual Mac
 
 While the Vagrant configuration file requests and creates a 10 GB disk, it actually wasn't usable until after doing the following steps:
 
-a) Launch off a LiveCD containing Gparted
-b) Deactivate the partition
-c) Resize the partition
-d) Then boot back into the virtual machine and do:
-
-`sudo pvdisplay 
-`sudo pvresize /dev/sda5`
-`sudo lvresize -l +100%FREE /dev/mapper/ubuntu--vg-root`
-`sudo resize2fs /dev/mapper/ubuntu--vg-root`
-
-e) Reboot
+1. Launch off a LiveCD containing Gparted
+2. Deactivate the partition
+3. Resize the partition
+4. Then boot back into the virtual machine and do:
+```
+sudo pvdisplay 
+sudo pvresize /dev/sda5
+sudo lvresize -l +100%FREE /dev/mapper/ubuntu--vg-root
+sudo resize2fs /dev/mapper/ubuntu--vg-root
+```
+5. Reboot

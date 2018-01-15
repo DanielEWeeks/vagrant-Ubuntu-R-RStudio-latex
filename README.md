@@ -19,6 +19,15 @@ To install this Ubuntu Virtual Machine, do the following:
  - Issue the command `vagrant up` at the host command line, and **wait** until the script is completely done.
  - If you encounter an error message during this, the building process might complete if you issue the command `vagrant provision` at the host command line (not within the new virtual machine).
  - Login using username/password = vagrant/vagrant
+ 
+It did not provision correctly, so had to do:
+```
+sudo apt-get purge libappstream3
+```
+and then
+```
+vagrant provision
+```
 
 Note that the 'vagrant' user has super user privileges on the Ubuntu Virtual Machine, so you are able to use 'sudo' if needed to install software or adjust permissions.
 
